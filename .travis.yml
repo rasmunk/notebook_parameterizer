@@ -5,7 +5,7 @@ python:
 - '3.6'
 - '3.7'
 install:
-- pip install .[test]
+- pip install -e .[test]
 script:
 - python setup.py check -rms
 - flake8
