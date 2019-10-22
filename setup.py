@@ -14,9 +14,14 @@ def read_req(name):
     return [req.strip() for req in read(path).splitlines() if req.strip()]
 
 
+version_ns = {}
+with open(os.path.join(here, 'version.py')) as f:
+    exec(f.read(), {}, version_ns)
+
+
 setup(
     name='notebook_parameterizer',
-    version='0.0.1',
+    version=version_ns['__version__'],
     description='',
     author='Rasmus Munk',
     author_email='rasmus.munk@nbi.ku.dk',
