@@ -64,7 +64,7 @@ def run(notebook_path,
     # Validate that the parameterized notebook is still valid
     try:
         nbformat.validate(input_nb, version=4)
-    except nbformat.ValidationError as err:
+    except nbformat.ValidationError:
         return -3
 
     try:

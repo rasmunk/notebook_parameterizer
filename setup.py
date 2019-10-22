@@ -26,7 +26,7 @@ setup(
     url='https://github.com/rasmunk/notebook_parameterizer',
     packages=['notebook_parameterizer'],
     install_requires=read_req('requirements.txt'),
-    extras_requires={
+    extras_require={
         "test": read_req('requirements-dev.txt'),
         "dev": read_req('requirements-dev.txt')
     },
