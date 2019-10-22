@@ -40,7 +40,7 @@ setup(
                             'notebook_parameterizer.cli:notebook_parameterizer'
                             ]},
     project_urls={
-        'Source': 'https://github.com/rasmunk/notebook_parameterizer'
+        'Source Code': 'https://github.com/rasmunk/notebook_parameterizer'
     },
     classifiers=[
         'Intended Audience :: Developers',
