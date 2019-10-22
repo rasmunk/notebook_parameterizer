@@ -18,16 +18,16 @@ version_ns = {}
 with open(os.path.join(here, 'version.py')) as f:
     exec(f.read(), {}, version_ns)
 
-
+long_description = open('README.rst').read()
 setup(
     name='notebook_parameterizer',
     version=version_ns['__version__'],
-    description='',
+    description='A tool to generate parameterized Jupyter Notebooks',
     author='Rasmus Munk',
     author_email='rasmus.munk@nbi.ku.dk',
     license='MIT',
     keywords='jupyter notebook parameters',
-    long_description='',
+    long_description=long_description,
     url='https://github.com/rasmunk/notebook_parameterizer',
     packages=['notebook_parameterizer'],
     install_requires=read_req('requirements.txt'),
@@ -47,6 +47,8 @@ setup(
         'Intended Audience :: Science/Research',
         'License :: OSI Approved :: MIT License',
         'Programming Language :: Python',
-        'Programming Language :: Python :: 3'
+        'Programming Language :: Python :: 2.7',
+        'Programming Language :: Python :: 3',
+        'Programming Language :: Python :: 3.7'
     ]
 )
