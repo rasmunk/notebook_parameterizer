@@ -13,10 +13,10 @@ deploy:
   skip_cleanup: true
   distributions: sdist bdist_wheel
   provider: pypi
+  skip_existing: true
   on:
     tags: true
     branch: master
-    python: '3.7'
   user: __token__
   password:
     secure: VUQLWRk2QYFV+cyhj7AdMa0VzV5vnOffXlIMHkmyAINwNNbotTK0wh57wH7c8AYJEoYf0ksT6DzwZ4wY7c9LODjLyIFB9y3vjA1XIWPxksv+ay+B23Oa7NSos7qnCuBEfMDEFg/A7oGHkImLrr/GKC1xcUf4odwzAcUIEAbER09BgbK30WdmAuGNjOFvtExJiypzFE9dGGY7r+FJ+F4zchyPISyRld0NB57rODZ5QrqIpjpYr8Bf17uNrWqgCJUN/toGXzq3kdKDX+RFMXqqeNsmiZOvIZ3o0ClIygkoTqsSLG+UyiETSBkklBQuo4u1ksDWjKCd9gl69sOYGsyPluHtv3KT4qvevaDnHZSFp4h8viNBhNY6oe8K2AQtJb/p0wMcU7+DE+cy2fE/Fy78QElcPQ85xcOoNITh+eSWKUQCN55hblo5fg60hq3s96CZ2IJJmJyXosdNKTb26mVnmvoaGJOIJv5BbuaYQhsKG6LUcDEAoQDeIZTQX3TcELclCqkzsEzjsgnfEJrQtluZGYKBSmcMk4NRLY9RIlAR7vZ/HToNVXwbvLBpMW0mcJI0Ennlko53/6EaQjvBwNl+iZ32W2lyCr3RdT2rx+W7cXlREvdhzxpP9Oa1qHw+hgujXbB573J8D8ScHuFHJCLarp9+P0K6a/slo3gqns5syyU=
