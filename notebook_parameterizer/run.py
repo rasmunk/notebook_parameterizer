@@ -38,10 +38,10 @@ def run(notebook_path,
         try:
             if isinstance(source, str) or isinstance(source, unicode):
                 lines = source.split('\n')
+            else:
+                lines = source
         except NameError:
-            pass
-        else:
-            lines = source
+            linse = source
 
         for idy, line in enumerate(lines):
             if "=" in line:
