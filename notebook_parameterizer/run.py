@@ -35,7 +35,7 @@ def run(notebook_path,
         cell_updated = False
         source = cell.get('source')
         # Either single string or a list of strings
-        if isinstance(source, str):
+        if isinstance(source, str) or isinstance(source, unicode):
             lines = source.split('\n')
         else:
             lines = source
