@@ -12,7 +12,7 @@ to parameterize a Notebook not based on a preset cell that contains the paramete
 throughout a Notebook without having to specify so.
 
 Instead the `notebook_parameterizer` uses a parameters YAML file to define which variables should be set to what value.
-With these preset variables in the parameters file, the `notebook_parameterizer` searches every cell for variable assignments 
+With these preset variables in the parameters file, the ``notebook_parameterizer`` searches every cell for variable assignments 
 that match the given key in the parameters file.
 
 -----
@@ -38,12 +38,12 @@ The NOTEBOOK_PATH is the path to the Notebook that should be parameterized.
 
 The PARAMETERS_PATH is the path to the YAML file that contains the variables that should be parameterized.
 
-For instance, given the following Notebook in `example/notebooks/hello_world.ipynb`.
+For instance, given the following Notebook in ``example/notebooks/hello_world.ipynb``.
 
 .. image:: res/hello_world.png
 
 
-We can paramterize the Notebook with the `example/parameters/hello_world.yml` parameters file::
+We can paramterize the Notebook with the ``example/parameters/hello_world.yml`` parameters file::
 
     num: 1000
     div_by: 4
@@ -56,7 +56,7 @@ This is achived by executing the following command::
      -o new_hello_world.ipynb
 
 
-After applying the `notebook_parameterizer`, the generated `new_hello_world.ipynb` Notebook has the following content.
+After applying the ``notebook_parameterizer``, the generated ``new_hello_world.ipynb`` Notebook has the following content.
 
 .. image:: res/parameterized_hello_world.png
 
