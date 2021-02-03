@@ -23,16 +23,16 @@ setup(
     name="notebook_parameterizer",
     version=version_ns["__version__"],
     description="A tool to generate parameterized Jupyter Notebooks",
+    long_description=long_description,
     author="Rasmus Munk",
     author_email="rasmus.munk@nbi.ku.dk",
     license="MIT",
     keywords="jupyter notebook parameters",
-    long_description=long_description,
     url="https://github.com/rasmunk/notebook_parameterizer",
     packages=["notebook_parameterizer"],
     install_requires=read_req("requirements.txt"),
     extras_require={
-        "test": read_req("requirements-dev.txt"),
+        "test": read_req("requirements-test.txt"),
         "dev": read_req("requirements-dev.txt"),
     },
     entry_points={
